@@ -24,7 +24,11 @@ A professional tool for Mobile Legends: Bang Bang players to quickly find hero a
 - Next.js Image Optimization
 
 ## Screenshots
-[We'll add these next]
+<img width="1674" alt="Screenshot 2025-01-16 at 12 53 08 AM" src="https://github.com/user-attachments/assets/eb1c1d56-7690-4826-93fd-0e0f32af135e" />
+
+<img width="1672" alt="Screenshot 2025-01-16 at 12 52 50 AM" src="https://github.com/user-attachments/assets/d30ba287-ffd4-4fe5-a247-0f8bade39f08" />
+
+
 
 ## Setup and Installation
 
