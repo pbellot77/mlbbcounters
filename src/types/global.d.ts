@@ -1,3 +1,5 @@
 interface Window {
-    adsbygoogle: any[];
+    adsbygoogle: {
+      push: (params: object) => void;
+    }[];
   }
