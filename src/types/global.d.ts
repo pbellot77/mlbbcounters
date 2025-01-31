@@ -1,5 +1,9 @@
-interface Window {
-    adsbygoogle: {
-      push: (params: object) => void;
-    }[];
+declare global {
+    interface Window {
+      adsbygoogle: Array<{
+        [key: string]: unknown;
+      }>;
+    }
   }
+  
+  export {};

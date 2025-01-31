@@ -10,7 +10,10 @@ interface AdvertisementProps {
 export default function Advertisement({ slot, className = '' }: AdvertisementProps) {
   useEffect(() => {
     try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
+      if (!window.adsbygoogle) {
+        window.adsbygoogle = [];
+      }
+      window.adsbygoogle.push({});
     } catch (error) {
       console.error('AdSense error:', error);
     }
