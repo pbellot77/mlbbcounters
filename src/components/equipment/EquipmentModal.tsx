@@ -2,6 +2,7 @@ import { Equipment } from '../../types/equipment';
 import { X } from 'lucide-react';
 import { getEquipmentCounters } from '../../data/equipment';
 import Image from 'next/image';
+import Advertisement from '../Advertisement';  // Add this import
 
 interface EquipmentModalProps {
   equipment: Equipment;
@@ -38,7 +39,7 @@ export function EquipmentModal({ equipment, onClose }: EquipmentModalProps) {
         </div>
 
         {/* Content */}
-        <div className="p-4 space-y-4">
+        <div className="p-4 space-y-4 overflow-y-auto">
           <div className="bg-[#1E2533] rounded-lg p-4">
             <h3 className="text-lg font-semibold text-blue-300 mb-3">Counter Items:</h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
@@ -54,6 +55,14 @@ export function EquipmentModal({ equipment, onClose }: EquipmentModalProps) {
             {counters?.description && (
               <p className="text-gray-400 mt-3 text-sm">{counters.description}</p>
             )}
+          </div>
+          
+          {/* Advertisement */}
+          <div className="mt-4">
+            <Advertisement
+              slot="equipment-modal-ad-slot"
+              className="w-full flex justify-center"
+            />
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@ import { equipment } from '../data/equipment';
 import { EquipmentModal } from '@/components/equipment/EquipmentModal';
 import type { Equipment } from '../types/equipment';
 import Image from 'next/image';
+import Advertisement from '@/components/Advertisement';
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -145,6 +146,7 @@ export default function Home() {
               </div>
             </div>
           ) : (
+            <>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
               {filteredHeroes.map((hero) => (
                 <HeroCard
@@ -154,6 +156,14 @@ export default function Home() {
                 />
               ))}
             </div>
+
+            <div className='mt-8'>
+              <Advertisement
+                slot="content-bottom-ad-slot"
+                className="w-full flex justify-center"
+              />
+            </div>
+            </>
           )
         ) : (
           // Equipment Grid
@@ -165,6 +175,7 @@ export default function Home() {
               </div>
             </div>
           ) : (
+            <>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
               {filteredEquipment.map((item) => (
                 <div
@@ -186,6 +197,13 @@ export default function Home() {
                 </div>
               ))}
             </div>
+            <div className='mt-8'>
+              <Advertisement
+                slot="content-bottom-ad-slot"
+                className="w-full flex justify-center"
+              />
+            </div>
+          </>
           )
         )}
       </main>
