@@ -39,7 +39,8 @@ A professional tool for Mobile Legends: Bang Bang players to quickly find hero a
   
 <img width="668" alt="Screenshot 2025-01-31 at 1 06 41 AM" src="https://github.com/user-attachments/assets/9542a262-9b48-42bd-ae8c-8123e5a69986" />
 
-
+## Disclaimer
+This project is not affiliated with or endorsed by Moonton or Mobile Legends: Bang Bang. All game assets and properties belong to their respective owners.
 
 
 ## Setup and Installation
@@ -53,3 +54,4 @@ npm install
 
 # Run the development server
 npm run dev
+
