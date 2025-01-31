@@ -24,10 +24,23 @@ A professional tool for Mobile Legends: Bang Bang players to quickly find hero a
 - Next.js Image Optimization
 
 ## Screenshots
-<img width="1674" alt="Screenshot 2025-01-16 at 12 53 08 AM" src="https://github.com/user-attachments/assets/eb1c1d56-7690-4826-93fd-0e0f32af135e" />
+### Main Hero Selection Screen
+<img width="1674" alt="Screenshot 2025-01-16 at 12 53 08 AM" src="https://github.com/user-attachments/assets/eb1c1d56-7690-4826-93fd-0e0f32af135e" /> 
 
+### Main Equipment Screen
+  
 <img width="1672" alt="Screenshot 2025-01-16 at 12 52 50 AM" src="https://github.com/user-attachments/assets/d30ba287-ffd4-4fe5-a247-0f8bade39f08" />
 
+### Hero Card
+
+<img width="670" alt="Screenshot 2025-01-31 at 1 06 18 AM" src="https://github.com/user-attachments/assets/ee496f9d-fceb-4881-a111-07a51f7c2dac" />
+
+### Equipment Card
+  
+<img width="668" alt="Screenshot 2025-01-31 at 1 06 41 AM" src="https://github.com/user-attachments/assets/9542a262-9b48-42bd-ae8c-8123e5a69986" />
+
+## Disclaimer
+This project is not affiliated with or endorsed by Moonton or Mobile Legends: Bang Bang. All game assets and properties belong to their respective owners.
 
 
 ## Setup and Installation
@@ -41,3 +54,4 @@ npm install
 
 # Run the development server
 npm run dev
+
