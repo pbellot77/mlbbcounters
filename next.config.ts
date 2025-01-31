@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['akmweb.youngjoygame.com'],
     remotePatterns: [
       {
         protocol: 'https',
