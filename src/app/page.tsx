@@ -67,6 +67,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-center text-white mb-8">
             MLBB Counters
           </h1>
+          
 
           {/* Rest of your existing header content */}
           {/* Tab Selector */}

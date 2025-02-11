@@ -68,6 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="LWqh5ur_iMETiQyvi1kKQ-oRO1tYRaWGPb3d-UDFUuI" />
         <meta name="google-adsense-account" content="ca-pub-3489095111043969" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={DOMAIN} />
