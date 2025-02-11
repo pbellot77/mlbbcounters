@@ -13,6 +13,7 @@ import Image from 'next/image';
 import Advertisement from '@/components/Advertisement';
 
 export default function Home() {
+  // Your existing state declarations
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedRole, setSelectedRole] = useState<HeroRole | 'All'>('All');
   const [selectedHero, setSelectedHero] = useState<Hero | null>(null);
@@ -20,6 +21,7 @@ export default function Home() {
   const [selectedEquipment, setSelectedEquipment] = useState<Equipment | null>(null);
   const [selectedType, setSelectedType] = useState<'Attack' | 'Magic' | 'Defense' | 'All'>('All');
 
+  // Your existing filter logic
   const filteredHeroes = heroes
     .sort((a, b) => a.name.localeCompare(b.name))
     .filter(hero => {
@@ -41,15 +43,35 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#1E2533]">
-      {/* Header */}
+      {/* Simple SEO Header */}
+      <div className="bg-[#252B3B] p-4 text-gray-300 text-sm">
+        <div className="container mx-auto text-center">
+          <p>
+            Find the perfect counter picks for{' '}
+            <a 
+              href="https://www.mobilelegends.com/en" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              Mobile Legends: Bang Bang
+            </a>{' '}
+            heroes and optimize your equipment builds.
+          </p>
+        </div>
+      </div>
+
+      {/* Your existing header */}
       <header className="bg-gradient-to-b from-[#252B3B] to-[#1E2533] py-8">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center text-white mb-8">
             MLBB Counters
           </h1>
 
+          {/* Rest of your existing header content */}
           {/* Tab Selector */}
           <div className="flex justify-center gap-4 mb-8">
+            {/* Your existing tab buttons */}
             <button
               onClick={() => setActiveTab('heroes')}
               className={`px-6 py-2 rounded-lg transition-all ${
@@ -71,8 +93,8 @@ export default function Home() {
               Equipment
             </button>
           </div>
-          
-          {/* Search Bar */}
+
+          {/* Your existing search bar */}
           <div className="max-w-2xl mx-auto mb-8">
             <div className="relative">
               <input
@@ -94,7 +116,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Role Selection Tabs - Only show for heroes */}
+          {/* Your existing role/type filters */}
           {activeTab === 'heroes' && (
             <div className="flex flex-wrap justify-center gap-2">
               {['All', 'Fighter', 'Tank', 'Assassin', 'Marksman', 'Mage', 'Support'].map((role) => (
@@ -113,7 +135,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* Type Selection Tabs - Only show for equipment */}
           {activeTab === 'equipment' && (
             <div className="flex flex-wrap justify-center gap-2">
               {['All', 'Attack', 'Magic', 'Defense'].map((type) => (
@@ -134,10 +155,10 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Main Content */}
+      {/* Your existing main content */}
       <main className="container mx-auto px-4 py-8">
+        {/* Heroes Grid */}
         {activeTab === 'heroes' ? (
-          // Heroes Grid
           filteredHeroes.length === 0 ? (
             <div className="flex justify-center items-center min-h-[200px] w-full">
               <div className="text-gray-400 text-center">
@@ -147,22 +168,22 @@ export default function Home() {
             </div>
           ) : (
             <>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              {filteredHeroes.map((hero) => (
-                <HeroCard
-                  key={hero.id}
-                  hero={hero}
-                  onClick={setSelectedHero}
-                />
-              ))}
-            </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                {filteredHeroes.map((hero) => (
+                  <HeroCard
+                    key={hero.id}
+                    hero={hero}
+                    onClick={setSelectedHero}
+                  />
+                ))}
+              </div>
 
-            <div className='mt-8'>
-              <Advertisement
-                slot="content-bottom-ad-slot"
-                className="w-full flex justify-center"
-              />
-            </div>
+              <div className='mt-8'>
+                <Advertisement
+                  slot="content-bottom-ad-slot"
+                  className="w-full flex justify-center"
+                />
+              </div>
             </>
           )
         ) : (
@@ -176,39 +197,75 @@ export default function Home() {
             </div>
           ) : (
             <>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              {filteredEquipment.map((item) => (
-                <div
-                  key={item.id}
-                  onClick={() => setSelectedEquipment(item)}
-                  className="bg-[#252B3B] rounded-lg p-4 hover:bg-[#353B4B] transition-colors cursor-pointer"
-                >
-                  <div className="flex flex-col items-center">
-                    <Image
-                      src={item.imageUrl}
-                      alt={item.name}
-                      width={64}
-                      height={64}
-                      className="object-cover mb-2"
-                    />
-                    <h3 className="text-white text-center text-sm font-medium">{item.name}</h3>
-                    <span className="text-blue-400 text-xs mt-1">{item.type}</span>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                {filteredEquipment.map((item) => (
+                  <div
+                    key={item.id}
+                    onClick={() => setSelectedEquipment(item)}
+                    className="bg-[#252B3B] rounded-lg p-4 hover:bg-[#353B4B] transition-colors cursor-pointer"
+                  >
+                    <div className="flex flex-col items-center">
+                      <Image
+                        src={item.imageUrl}
+                        alt={item.name}
+                        width={64}
+                        height={64}
+                        className="object-cover mb-2"
+                      />
+                      <h3 className="text-white text-center text-sm font-medium">{item.name}</h3>
+                      <span className="text-blue-400 text-xs mt-1">{item.type}</span>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-            <div className='mt-8'>
-              <Advertisement
-                slot="content-bottom-ad-slot"
-                className="w-full flex justify-center"
-              />
-            </div>
-          </>
+                ))}
+              </div>
+              <div className='mt-8'>
+                <Advertisement
+                  slot="content-bottom-ad-slot"
+                  className="w-full flex justify-center"
+                />
+              </div>
+            </>
           )
         )}
       </main>
 
-      {/* Hero Details Modal */}
+      {/* Simple SEO Footer */}
+      <footer className="bg-[#252B3B] text-gray-300 py-4">
+        <div className="container mx-auto px-4 text-center text-sm">
+          <p>
+            Stay updated with the latest{' '}
+            <a 
+              href="https://www.mobilelegends.com/en/news" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              game updates
+            </a>
+            {' '}and{' '}
+            <a 
+              href="https://www.mobilelegends.com/en/guide" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              hero guides
+            </a>
+            . MLBB is a trademark of{' '}
+            <a 
+              href="https://www.moonton.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              Moonton
+            </a>
+            .
+          </p>
+        </div>
+      </footer>
+
+      {/* Your existing modals */}
       {selectedHero && (
         <HeroModal
           hero={selectedHero}
@@ -216,7 +273,6 @@ export default function Home() {
         />
       )}
 
-      {/* Equipment Details Modal */}
       {selectedEquipment && (
         <EquipmentModal
           equipment={selectedEquipment}
