@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Find the perfect counter picks for all Mobile Legends: Bang Bang heroes. Improve your win rate with our comprehensive counter guide and hero matchup analysis.",
   keywords: "MLBB counters, Mobile Legends counter picker, MLBB hero counters, Mobile Legends Bang Bang counters, MLBB counter guide",
   authors: [{ name: "MLBB Counters" }],
-  creator: "MLBB Counters",
+  creator: "Pitboss Pat",
   publisher: "MLBB Counters",
   formatDetection: {
     email: false,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MLBB Counters | Mobile Legends Counter Picker',
     description: 'Find the perfect counter picks for all Mobile Legends: Bang Bang heroes',
-    creator: '@mlbbcounters',
+    creator: '@pitbosspat',
   },
   robots: {
     index: true,
