@@ -6,8 +6,10 @@ import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const DOMAIN = 'https://www.mlbbcounters.com';
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mlbbcounters.com'),
+  metadataBase: new URL(DOMAIN),
   title: {
     default: "MLBB Counters | Mobile Legends Counter Picker",
     template: "%s | MLBB Counters"
@@ -15,7 +17,7 @@ export const metadata: Metadata = {
   description: "Find the perfect counter picks for all Mobile Legends: Bang Bang heroes. Improve your win rate with our comprehensive counter guide and hero matchup analysis.",
   keywords: "MLBB counters, Mobile Legends counter picker, MLBB hero counters, Mobile Legends Bang Bang counters, MLBB counter guide",
   authors: [{ name: "MLBB Counters" }],
-  creator: "Pitboss Pat",
+  creator: "MLBB Counters",
   publisher: "MLBB Counters",
   formatDetection: {
     email: false,
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MLBB Counters | Mobile Legends Counter Picker",
     description: "Find the perfect counter picks for all Mobile Legends: Bang Bang heroes. Improve your win rate with our comprehensive counter guide.",
-    url: 'https://mlbbcounters.com',
+    url: DOMAIN,
     siteName: 'MLBB Counters',
     locale: 'en_US',
     type: 'website',
@@ -53,6 +55,9 @@ export const metadata: Metadata = {
   other: {
     'google-adsense-account': 'ca-pub-3489095111043969',
   },
+  alternates: {
+    canonical: DOMAIN
+  }
 };
 
 export default function RootLayout({
@@ -65,7 +70,7 @@ export default function RootLayout({
       <head>
         <meta name="google-adsense-account" content="ca-pub-3489095111043969" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://mlbbcounters.com" />
+        <link rel="canonical" href={DOMAIN} />
         <Script 
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3489095111043969"
