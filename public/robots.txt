@@ -1,0 +1,22 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.mlbbcounters.com/sitemap.xml
+
+# Common directories that don't need to be crawled
+Disallow: /api/
+Disallow: /_next/
+Disallow: /_vercel/
+Disallow: /static/
+
+# Prevent media files from being crawled (optional)
+# Disallow: /*.jpg$
+# Disallow: /*.jpeg$
+# Disallow: /*.gif$
+# Disallow: /*.png$
+# Disallow: /*.webp$
+
+# Prevent duplicate content
+Disallow: /*?*
