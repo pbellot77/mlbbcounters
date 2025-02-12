@@ -11,7 +11,7 @@ const DOMAIN = 'https://www.mlbbcounters.com';
 export const metadata: Metadata = {
   metadataBase: new URL(DOMAIN),
   title: {
-    default: "MLBB Counters | Choose counter heroes in every lane in Mobile Legends: Bang Bang!",
+    default: "MLBB Counter Guide | Best Mobile Legends Hero Matchups",
     template: "%s | MLBB Counters"
   },
   description: "Find the perfect counter picks for all Mobile Legends: Bang Bang heroes. Improve your win rate with our comprehensive counter guide and hero matchup analysis.",
