@@ -12,6 +12,7 @@ import type { Equipment } from '../types/equipment';
 import Image from 'next/image';
 import Advertisement from '@/components/Advertisement';
 
+
 export default function Home() {
   // Your existing state declarations
   const [searchQuery, setSearchQuery] = useState('');
