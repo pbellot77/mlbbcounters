@@ -11,7 +11,7 @@ import { EquipmentModal } from '@/components/equipment/EquipmentModal';
 import type { Equipment } from '../types/equipment';
 import Image from 'next/image';
 import Advertisement from '@/components/Advertisement';
-
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 export default function Home() {
   // Your existing state declarations
@@ -281,6 +281,8 @@ export default function Home() {
           onClose={() => setSelectedEquipment(null)}
         />
       )}
+
+      <ScrollToTopButton />
     </div>
   );
 }
