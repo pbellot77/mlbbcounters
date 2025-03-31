@@ -1339,6 +1339,16 @@ interface CounterByLane {
               Jungle: ["Karina", "Ling", "Gusion"],
               Roam: ["Khufra", "Atlas", "Diggie"]
             }
+          },
+          {
+            heroName: "Kalea",
+            counters: {
+              EXP: ["Phoveus", "Esmeralda", "Yu Zhong"],
+              Mid: ["Valir", "Lunox", "Hadita"],
+              Gold: ["Claude", "Wanwan", "Beatrix"],
+              Jungle: ["Karina", "Ling", "Gusion"],
+              Roam: ["Franco", "Atlas", "Khufra"]
+            }
           }       
     ];
     

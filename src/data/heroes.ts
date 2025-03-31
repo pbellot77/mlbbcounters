@@ -889,6 +889,13 @@ const heroesData: Hero[] = [
     imageUrl: 'https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_20/100_422ffc7849e8bb01629d2423054ed410.png',
     role: 'Fighter',
     counters: []
+  },
+  {
+    id: 128,
+    name: 'Kalea',
+    imageUrl: 'https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_9c5f2904026ba88b7aba8c9b2722f4ad.png',
+    role: 'Support',
+    counters: []
   }
 ];
 
