@@ -1349,7 +1349,17 @@ interface CounterByLane {
               Jungle: ["Karina", "Ling", "Gusion"],
               Roam: ["Franco", "Atlas", "Khufra"]
             }
-          }       
+          },
+          {
+            heroName: "Zetian",
+            counters: {
+              EXP: ["Phoveus", "Chou", "Terizla"],
+              Mid: ["Harley", "Kadita", "Julian"],
+              Gold: ["Hanabi", "Wanwan", "Granger"],
+              Jungle: ["Fanny", "Ling", "Hayabusa"],
+              Roam: ["Johnson", "Kaja", "Atlas"]
+            }
+          }      
     ];
     
     // Helper function to get counters for a specific hero from a specific lane

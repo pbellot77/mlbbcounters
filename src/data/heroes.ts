@@ -896,6 +896,13 @@ const heroesData: Hero[] = [
     imageUrl: 'https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_9c5f2904026ba88b7aba8c9b2722f4ad.png',
     role: 'Support',
     counters: []
+  },
+  {
+    id: 129,
+    name: 'Zetian',
+    imageUrl: 'https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_90/100_22dc8b16ea98a735027c3141b74ef841.png',
+    role: 'Mage',
+    counters: []
   }
 ];
 
