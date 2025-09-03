@@ -12,7 +12,7 @@ export function HeroCard({ hero, onClick }: HeroCardProps) {
       onClick={() => onClick?.(hero)}
       className="bg-[#252B3B] rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/10 transition-all cursor-pointer group"
     >
-      <div className="relative aspect-square">
+      <div className="relative overflow-hidden aspect-square">
         <Image
           src={hero.imageUrl}
           alt={hero.name}
