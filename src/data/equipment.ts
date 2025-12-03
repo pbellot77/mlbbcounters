@@ -309,7 +309,7 @@ export const equipment: Equipment[] = [
   {
     id: 32,
     name: "Chastise Pauldron",
-    imageUrl: "https://mlbbcentral.com/mlbb-item-chastise-pauldron/", // You'll need to find the image URL
+    imageUrl: "https://static.wikia.nocookie.net/mobile-legends/images/2/2f/Chastise_Pauldron.png/revision/latest?cb=20251105081741", // You'll need to find the image URL
     type: "Defense",
     counters: {
       items: ["Divine Glaive", "Malefic Roar", "Magic Items"],
