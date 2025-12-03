@@ -294,6 +294,8 @@ export const equipment: Equipment[] = [
       description: "Counter with both magic and physical defense"
     }
   },
+
+  // Defense Items
   {
     id: 31,
     name: "Radiant Armor",
@@ -306,12 +308,12 @@ export const equipment: Equipment[] = [
   },
   {
     id: 32,
-    name: "Twilight Armor",
-    imageUrl: "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_211c1d51fa5bb1beae462b8ceaa3953a.png",
+    name: "Chastise Pauldron",
+    imageUrl: "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_chastise_pauldron.png", // You'll need to find the image URL
     type: "Defense",
     counters: {
-      items: ["Demon Hunter Sword", "Malefic Roar", "Divine Glaive"],
-      description: "Counter with percentage-based damage and penetration"
+      items: ["Divine Glaive", "Malefic Roar", "Magic Items"],
+      description: "Counter with penetration and magic damage items"
     }
   },
   {
@@ -381,7 +383,7 @@ export const equipment: Equipment[] = [
     type: "Defense",
     counters: {
       items: ["Sea Halberd", "Necklace of Durance", "Divine Glaive"],
-      description: "Counter with anti-heal and penetration items"
+      description: "Counter with anti-heal and penetration items. Reduces burst damage exceeding 8% max HP by 50%"
     }
   },
   {
@@ -468,7 +470,7 @@ export const equipment: Equipment[] = [
     id: 48,
     name: "Fleeting Time",
     imageUrl: "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_1fc7a39372d1f1150abc71212832a1ed.png",
-    type: "Attack",
+    type: "Magic",
     counters: {
       items: ["Oracle", "Athena's Shield", "Radiant Armor"],
       description: "Counter with magic defense items"
