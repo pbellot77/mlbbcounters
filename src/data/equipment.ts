@@ -309,7 +309,7 @@ export const equipment: Equipment[] = [
   {
     id: 32,
     name: "Chastise Pauldron",
-    imageUrl: "https://liquipedia.net/commons/images/0/0b/Item_Chastise_Pauldron_ML.png", // You'll need to find the image URL
+    imageUrl: "https://mlbbcentral.com/mlbb-item-chastise-pauldron/", // You'll need to find the image URL
     type: "Defense",
     counters: {
       items: ["Divine Glaive", "Malefic Roar", "Magic Items"],
