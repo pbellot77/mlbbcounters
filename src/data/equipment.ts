@@ -309,7 +309,7 @@ export const equipment: Equipment[] = [
   {
     id: 32,
     name: "Chastise Pauldron",
-    imageUrl: "https://storage.googleapis.com/cdn.vcgamers.com/news/wp-content/uploads/2025/10/Chastise-Cauldron-3.png", // You'll need to find the image URL
+    imageUrl: "https://liquipedia.net/commons/images/0/0b/Item_Chastise_Pauldron_ML.png", // You'll need to find the image URL
     type: "Defense",
     counters: {
       items: ["Divine Glaive", "Malefic Roar", "Magic Items"],
