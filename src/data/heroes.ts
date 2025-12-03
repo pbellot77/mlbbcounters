@@ -908,7 +908,7 @@ const heroesData: Hero[] = [
     id: 130,
     name: 'Obsidia',
     imageUrl: 'https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_92bcc9ad2c4c8165a888d34f086a4d28.png',
-    role: 'Marksman'
+    role: 'Marksman',
     counters: []
   }
 ];
