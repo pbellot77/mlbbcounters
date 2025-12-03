@@ -1359,6 +1359,16 @@ interface CounterByLane {
               Jungle: ["Fanny", "Ling", "Hayabusa"],
               Roam: ["Johnson", "Kaja", "Atlas"]
             }
+          },
+          {
+            heroName: "Obsidia",
+            counters: {
+              EXP: ["Esmeralda", "Yu Zhong", "Ruby"],
+              Mid: ["Valentina", "Lylia", "Kagura"],
+              Gold: ["Beatrix", "Melissa", "Irithel"],
+              Jungle: ["Natalia", "Lancelot", "Karina"],
+              Roam: ["Mathilda", "Diggie", "Rafaela"]
+            }
           }      
     ];
     
